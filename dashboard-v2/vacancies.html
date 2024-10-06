@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacancy | Open Hiring</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css" />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/vacancies.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <div id="overlay"></div>
+      <aside class="sidebar-wrapper">
+        <div class="sidebar-header">
+          <a href="index.html" class="brand-logo">
+            <img src="./assets/images/logo/logo-oh.svg" alt="" class="img-fluid" />
+          </a>
+        </div>
+        <div class="sidebar-content">
+          <ul class="sidebar-link-wrap">
+            <span class="text-capitalize mb-2 fw-medium sidebar-title">home</span>
+            <li class="mb-3">
+              <a href="index.html" class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                <i data-icon="dashboard" class="link-icon"></i>
+                Dashboard
+              </a>
+            </li>
+            <span class="text-capitalize mb-2 fw-medium sidebar-title">organisatie</span>
+            <li class="mb-1">
+              <a
+                href="./vacancies.html"
+                class="sidebar-link active text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="briefcase" class="link-icon"></i>
+                Vacatures
+              </a>
+            </li>
+            <li class="mb-3 sidebar-bottom-border">
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="company" class="link-icon"></i>
+                Bedrijfsprofiel
+              </a>
+            </li>
+            <span class="text-capitalize mb-2 fw-medium sidebar-title">hulp</span>
+            <li class="mb-1">
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="tools" class="link-icon"></i>
+                Checklist
+              </a>
+            </li>
+            <li class="mb-3">
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="faq" class="link-icon"></i>
+                Veelgestelde vragen
+              </a>
+            </li>
+            <li class="mt-auto mb-1">
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="account" class="link-icon"></i>
+                Account
+              </a>
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="logout" class="link-icon"></i>
+                Uitloggen
+              </a>
+            </li>
+            <li class="mt-4 d-block d-xl-none">
+              <button class="button">Vacature plaatsen</button>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="custom-header">
+          <div class="d-flex align-items-center">
+            <a href="index.html" class="brand-logo">
+              <img src="./assets/images/logo/logo-oh.svg" alt="" class="img-fluid" />
+            </a>
+            <div>
+              <h6>Vacatures</h6>
+              <span>Café September</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end">
+            <div class="dropdown">
+              <button type="button" class="header-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                <i data-icon="notification"></i>
+                <div class="notification-dot"></div>
+              </button>
+              <ul class="dropdown-menu notification-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <div class="notification-no">#1</div>
+                    <div>
+                      <h6 class="fw-normal">Kandidaat #1</h6>
+                      <div class="notification-details">
+                        <span>Vr 17 feb</span>
+                        <span class="position-relative notification-name">Bediening</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <div class="notification-no">#2</div>
+                    <div>
+                      <h6 class="fw-normal">Kandidaat #1</h6>
+                      <div class="notification-details">
+                        <span>Vr 17 feb</span>
+                        <span class="position-relative notification-name">Bediening</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button class="button d-none d-xl-block">Vacature plaatsen</button>
+            <button id="hamburger" class="hamburger d-xl-none">
+              <div></div>
+            </button>
+          </div>
+        </header>
+        <div class="content-wrap">
+          <div class="vacancies-table-wrap">
+            <div class="vacancies-table-header">
+              <h2 class="h2">Vacatures</h2>
+              <select
+                class="custom-selectpicker with-prefix selectpicker"
+                data-style=""
+                data-style-base=""
+                data-show-tick="true"
+                data-prefix=""
+                multiple
+              >
+                <option>Alles</option>
+                <option>Gepubliceerd</option>
+                <option>Concept</option>
+                <option>Gepland</option>
+                <option data-divider="true"></option>
+                <option>Toon gepauzeerde vacatures</option>
+              </select>
+            </div>
+            <div class="table-responsive">
+              <table class="table vacancies-table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">FUNCTIETITEL</th>
+                    <th scope="col">KANDIDATEN</th>
+                    <th scope="col">DATUM</th>
+                    <th scope="col">STATUS</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bediening</td>
+                    <td><span class="fw-bolder">0</span> / <span>25</span></td>
+                    <td class="date-col">
+                      <span class="d-block">Gepubliceerd</span><span class="d-block">31 januari 2023</span>
+                    </td>
+                    <td>
+                      <div>
+                        <span class="status-label dark-green">GEPUBLICEERD</span>
+                      </div>
+                    </td>
+                    <td class="text-end">
+                      <div class="dropdown custom-dropdown vacancy-dropdown">
+                        <button
+                          class="btn btn-transparent dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="more-icon"><i data-icon="more"></i></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Live vacature bekijken</a></li>
+                          <li><a class="dropdown-item" href="#">Vacature pauzeren</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Bediening</td>
+                    <td></td>
+                    <td><span class="d-block">Laatste wiziging </span><span class="d-block">31 januari 2023</span></td>
+                    <td>
+                      <div>
+                        <span class="status-label filled-roze">GEPUBLICEERD</span>
+                      </div>
+                    </td>
+                    <td class="text-end">
+                      <div class="dropdown custom-dropdown vacancy-dropdown">
+                        <button
+                          class="btn btn-transparent dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="more-icon"><i data-icon="more"></i></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Live vacature bekijken</a></li>
+                          <li><a class="dropdown-item" href="#">Vacature pauzeren</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Bediening</td>
+                    <td></td>
+                    <td><span class="d-block">Gepland op</span><span class="d-block">5 februari 2023</span></td>
+                    <td>
+                      <div>
+                        <span class="status-label light-green">Gepland</span>
+                      </div>
+                    </td>
+                    <td class="text-end">
+                      <div class="dropdown custom-dropdown vacancy-dropdown">
+                        <button
+                          class="btn btn-transparent dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="more-icon"><i data-icon="more"></i></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Live vacature bekijken</a></li>
+                          <li><a class="dropdown-item" href="#">Vacature pauzeren</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap-select.min.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>

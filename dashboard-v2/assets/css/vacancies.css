@@ -1,0 +1,325 @@
+.vacancies-table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.vacancies-table-header h2 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.select-wrap {
+  padding: 8px 5rem 8px 20px;
+  font-size: 16px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid var(--lightgreen-tint-7);
+  color: var(--black);
+}
+
+.select-wrap:focus,
+.select-wrap:hover,
+.select-wrap:active {
+  border-color: var(--darkgreen);
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.vacancies-table {
+  border: 1px solid var(--lightgreen-tint-7);
+  border-radius: 20px;
+  border-spacing: 0;
+  border-collapse: separate;
+  overflow: hidden;
+}
+
+.vacancies-table thead tr>th,
+.new-candidate-table-wrap thead tr>th {
+  padding: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--lightgreen-tint-7);
+}
+
+.vacancies-table td,
+.new-candidate-table-wrap td {
+  padding: 20px;
+  color: var(--darkgreen) !important;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.vacancies-table td a,
+.new-candidate-table-wrap td a {
+  color: var(--darkgreen) !important;
+  text-decoration: none;
+}
+
+.table> :not(caption)>*>* {
+  border-bottom-width: 0;
+}
+
+.vacancies-table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid var(--lightgreen-tint-7);
+}
+
+.status-label {
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.status-label.gray {
+  background-color: #928c90;
+  color: var(--white);
+}
+
+.status-label.roze {
+  background-color: transparent;
+  border: 2px solid var(--rose);
+  color: var(--rose);
+}
+
+.status-label.filled-roze {
+  background-color: var(--rose);
+  color: var(--white);
+}
+
+.status-label.dark-green {
+  background-color: var(--darkgreen-tint-2);
+  color: var(--white);
+}
+
+.status-label.light-green {
+  background-color: var(--lightgreen);
+  color: var(--darkgreen);
+}
+
+.new-candidate-table-wrap {
+  width: 100%;
+  border: 1px solid var(--lightgreen-tint-7);
+  border-radius: 20px;
+  overflow: hidden;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.table-striped>tbody>tr:nth-of-type(even)>*,
+.table-striped>tbody>tr:nth-of-type(even) {
+  background-color: #f8f9f1;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-accent-bg: #fefefb;
+}
+
+.new-candidate-table-wrap thead tr,
+.vacancies-table thead tr {
+  background-color: #f8f9f1;
+}
+
+.new-candidate-table-wrap tbody tr:not(:last-child) td {
+  border-bottom: 1px solid #f8f9f1;
+}
+
+.new-candidate-wrap {
+  margin-bottom: 5rem;
+}
+
+.table-count {
+  border: 1px solid var(--green-tint-3);
+  padding: 4px;
+  border-radius: 6px;
+  min-width: 42px;
+  min-height: 42px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+.vacancies-table-wrap .select-wrap {
+  border-radius: 10px;
+}
+
+.custom-dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.custom-dropdown .btn {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  transition: 0.3s all;
+}
+
+.custom-dropdown .btn:active,
+.custom-dropdown .btn:focus,
+.custom-dropdown .btn:hover {
+  background-color: #eef0e9;
+  outline: none;
+}
+
+.custom-dropdown {
+  margin-left: auto;
+}
+
+.more-icon {
+  color: var(--clay-shade-4);
+}
+
+.custom-dropdown .dropdown-menu {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid transparent;
+  background-color: #e5eadc;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.custom-dropdown .dropdown-item {
+  font-size: 18px;
+  color: var(--black);
+  padding: 10px 20px;
+  font-weight: 400;
+  word-break: break-word;
+  transition: 0.3s all;
+}
+
+.custom-dropdown .dropdown-item:active,
+.custom-dropdown .dropdown-item:hover,
+.custom-dropdown .dropdown-item:focus {
+  background-color: #eef0e9;
+}
+
+/* Multi Selector start  */
+
+.service-select-wrap>.dropdown.bootstrap-select.show-tick {
+  border-radius: 50px;
+}
+
+.service-select-wrap>.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 150px;
+}
+
+.service-select-wrap>.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  border-color: transparent;
+  background-color: var(--lightgreen-tint-6);
+}
+
+.service-select-wrap>.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  border-color: transparent;
+  background-color: var(--lightgreen-tint-6);
+}
+
+.service-select-wrap>.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  border-color: transparent;
+  background-color: var(--lightgreen-tint-6);
+}
+
+.service-select-wrap .dropdown-item.active,
+.dropdown-item:active {
+  color: var(--darkgreen);
+  text-decoration: none;
+  background-color: var(--lightgreen-tint-1);
+}
+
+.service-select-wrap>.dropdown.bootstrap-select {
+  border-radius: 50px;
+}
+
+.service-select-wrap>.bootstrap-select .dropdown-toggle .filter-option {
+  padding-left: 0;
+}
+
+.vacancy-select-wrap>.dropdown.bootstrap-select.show-tick>.dropdown-toggle::before {
+  content: "Toon:";
+  position: absolute;
+  left: 0;
+  color: #42483d;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Multi Selector end */
+
+.vacancy-dropdown .dropdown-item {
+  margin-bottom: 0;
+}
+
+.vacancy-dropdown li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* media query */
+
+@media screen and (max-width: 767px) {
+  .custom-dropdown-spacing {
+    margin-bottom: 25px;
+  }
+
+  .vacancies-table-header {
+    margin-bottom: 15px;
+  }
+
+  .status-label {
+    padding: 5px 10px;
+  }
+
+  .custom-dropdown .btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .vacancies-table td,
+  .new-candidate-table-wrap td {
+    padding: 10px;
+  }
+
+  .invited-candidate-wrap .vacancies-table-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vacancies-table thead tr>th,
+  .new-candidate-table-wrap thead tr>th {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vacancies-table-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vacancies-table-header h2 {
+    margin-bottom: 10px;
+  }
+}

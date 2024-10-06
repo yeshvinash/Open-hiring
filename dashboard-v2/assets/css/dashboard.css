@@ -1,0 +1,55 @@
+.dashboard-steps-wrapper {
+    border: 1px solid var(--green-tint-2);
+    border-radius: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.dashboard-title {
+    max-width: 70rem;
+    margin-bottom: 20px;
+}
+
+.listed-steps-wrap {
+    padding: 20px;
+}
+
+.listed-steps-wrap:not(:last-child) {
+    border-bottom: 1px solid var(--green-tint-2);
+}
+
+.listed-steps-wrap:nth-child(odd) {
+    background-color: var(--lightgreen-tint-4);
+}
+
+.steps-content-wrap p {
+    color: var(--darkgreen-tint-1);
+}
+
+/* responsive meida query */
+
+@media screen and (max-width:991px) {
+    .dashboard-title h2 {
+        font-size: 28px;
+    }
+
+    .dashboard-title {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .steps-content-wrap {
+        margin-bottom: 12px;
+    }
+
+    .invite-tagline {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .dashboard-title h2 {
+        font-size: 25px;
+    }
+}
