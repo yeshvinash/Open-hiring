@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Vacancy</title>
+    <link rel="stylesheet" href="./assets/css/select2.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="./assets/css/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/datepicker.css">
+    <link rel="stylesheet" href="./assets/css/vacancies.css">
+    <link rel="stylesheet" href="./assets/css/company-profile.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div id="overlay"></div>
+        <aside class="sidebar-wrapper">
+            <div class="sidebar-header">
+                <a href="index.html" class="brand-logo">Open Hiring</a>
+            </div>
+            <div class="sidebar-content">
+                <ul class="sidebar-link-wrap">
+                    <li class="mb-3">
+                        <a href="index.html"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="dashboard" class="link-icon"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <span class="text-uppercase mb-2 fw-medium sidebar-title">organisatie</span>
+                    <li class="mb-1">
+                        <a href="./vacancies.html"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="briefcase" class="link-icon"></i>
+                            Vacatures
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="javascript:void(0)"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="building" class="link-icon"></i>
+                            Bedrijfsprofiel
+                        </a>
+                    </li>
+                    <span class="text-uppercase mb-2 fw-medium sidebar-title">hulp</span>
+                    <li class="mb-1">
+                        <a href="javascript:void(0)"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="tools" class="link-icon"></i>
+                            Checklist
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="javascript:void(0)"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="help" class="link-icon"></i>
+                            Veelgestelde vragen
+                        </a>
+                    </li>
+                    <li class="mt-auto mb-1">
+                        <a href="javascript:void(0)"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="user" class="link-icon"></i>
+                            Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="logOut" class="link-icon"></i>
+                            Uitloggen
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <header class="custom-header">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="index.html" class="brand-logo">Open Hiring</a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button type="button" class="header-btn"><i data-icon="plus"></i></button>
+                    <button type="button" class="header-btn"><i data-icon="notification"></i></button>
+                    <button type="button" class="header-btn profile"></button>
+                    <button id="hamburger" class="hamburger d-xl-none">
+                        <div></div>
+                    </button>
+                </div>
+            </header>
+            <div class="content-wrap">
+                <div class="row g-5">
+                    <div class="col-md-8 col-xxl-9">
+                        <div class="company-profile-wrap">
+                            <div class="company-profile-modules">
+                                <div class="company-title-wrap mb-5">
+                                    <h3 class="fw-bold mb-0">Vacature aanmaken</h3>
+                                </div>
+                                <form class="form-wrapper" action="" method="" enctype="multipart/form-data"
+                                    id="my-form">
+                                    <div class="form-spacing">
+                                        <label for="" class="input-label">Functie titel</label>
+                                        <input class="form-input" type="text" placeholder="Functie titel">
+                                    </div>
+                                    <div class="form-spacing">
+                                        <label for="" class="input-label">Functie type</label>
+                                        <div>
+                                            <select name="single-select" class="form-input singleSelect">
+                                                <option value="">Functie type</option>
+                                                <option value="">Option 1</option>
+                                                <option value="">Option 2</option>
+                                                <option value="">Option 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-spacing">
+                                        <div class="d-flex justify-content-between">
+                                            <label for="" class="input-label">Taak omschrijving</label>
+                                            <div data-counter-value="">0/500 karakter</div>
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="6" maxlength="500" class="form-input"
+                                            data-input-type="textarea-counter"
+                                            placeholder="Omschrijving wat de werknemer gaat doen binnen de functie"></textarea>
+                                    </div>
+                                    <div class="form-spacing">
+                                        <div class="d-flex justify-content-between">
+                                            <label for="" class="input-label">Afbeelding banner</label>
+                                            <div data-counter-value="">JPEG/PNG</div>
+                                        </div>
+                                        <div>
+                                            <div class="multiple-uploader" id="multiple-uploader">
+                                                <div class="mup-msg">
+                                                    <span class="mup-main-msg">Sleep het bestand hier om te
+                                                        uploaden.</span>
+                                                    <span class="mup-msg">OF</span>
+                                                    <span class="mup-msg upload-btn fw-medium" id="upload-btn">Kies
+                                                        bestand</span>
+                                                </div>
+                                            </div>
+                                            <p>Deze afbeelding wordt bovenaan de vacaturepagina getnood. Denk aan een
+                                                afbeelding van de omgeving waarin gewerkt gaat worden.</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-spacing">
+                                        <label for="" class="input-label">Vereiste vaardigheden</label>
+                                        <div>
+                                            <select name="single-select" class="form-input" id="multiSelect">
+                                                <option value="">Selecteer vereiste vaardigheden</option>
+                                                <option value="">Option 1</option>
+                                                <option value="">Option 2</option>
+                                                <option value="">Option 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-spacing">
+                                        <label for="" class="input-label">Arbeidsvoorwaarden</label>
+                                        <div>
+                                            <select name="single-select" class="form-input singleSelect">
+                                                <option value="">Selecteer de Arbeidsvoorwaarden</option>
+                                                <option value="">Option 1</option>
+                                                <option value="">Option 2</option>
+                                                <option value="">Option 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="company-profile-modules">
+                                <div class="company-title-wrap mb-5">
+                                    <h3 class="fw-bold mb-0">Aanvullende informatie</h3>
+                                </div>
+                                <form class="form-wrapper">
+                                    <div class="form-spacing">
+                                        <label for="" class="input-label">Aantal openstaande plaatsen</label>
+                                        <div class="icon-append">
+                                            <input type="number" class="form-input" placeholder="Bv. 1">
+
+                                            <div class="num-input-arrows input-icon">
+                                                <button class="num-arrow num-arrow-up">
+                                                    <i data-icon="arrowUp"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 24 24" width="24" height="24"
+                                                            fill="currentColor">
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path
+                                                                d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z">
+                                                            </path>
+                                                        </svg></i>
+                                                </button>
+
+                                                <button class="num-arrow num-arrow-down">
+                                                    <i data-icon="arrowDown"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 24 24" width="24" height="24">
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path
+                                                                d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+                                                                fill="currentColor"></path>
+                                                        </svg></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-spacing">
+                                        <label for="" class="input-label">Max. aantal aanmeldingen</label>
+                                        <div class="icon-append">
+                                            <input type="number" class="form-input" placeholder="Bv. 100">
+
+                                            <div class="num-input-arrows input-icon">
+                                                <button class="num-arrow num-arrow-up">
+                                                    <i data-icon="arrowUp"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 24 24" width="24" height="24"
+                                                            fill="currentColor">
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path
+                                                                d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z">
+                                                            </path>
+                                                        </svg></i>
+                                                </button>
+
+                                                <button class="num-arrow num-arrow-down">
+                                                    <i data-icon="arrowDown"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 24 24" width="24" height="24">
+                                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                                            <path
+                                                                d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+                                                                fill="currentColor"></path>
+                                                        </svg></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-spacing">
+                                        <label for="" class="input-label">Locatie</label>
+                                        <input class="form-input" type="text" value="Kerkstraat 1 1234 AB, Amsterdam"
+                                            readonly="">
+                                    </div>
+                                    <a href="javascript:void(0)" class="text-center d-block link underlined">Andere
+                                        locatie</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xxl-3">
+                        <div class="company-btn-wrap">
+                            <div>
+                                <h6 class="mb-lg-4 mb-5 fw-bold">Publiceren</h6>
+                                <div class="custom-btn-group">
+                                    <button class="button button-radius button-bordered">Bekijken voorbeeld</button>
+                                    <button class="button button-radius button-bordered">Concept opslaan</button>
+                                    <button class="button button-radius button-bordered" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">Inplannen</button>
+                                    <button class="button button-radius">Publiceren</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL START -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-5 rounded-4">
+                    <div class="modal-body p-0 mb-5">
+                        <h3 class="fw-bold mb-4">Vacature inplannen</h3>
+                        <h6 class="sm mb-5 fw-normal">
+                            Je kan de vacature bewerken tot het moment van publiceren. Daarna is het niet meer mogelijk
+                            om de vacature
+                            te bewerken.
+                        </h6>
+                        <div class="row g-md-0 gy-5">
+                            <div class="col-md-6 col-12 custom-datepicker">
+                                <label for="datepicker" class="input-label text-black fw-medium">Datum</label>
+                                <input type="text" placeholder="DD-MM-JJJJ" id="datepicker" class="form-input">
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <label for="timepicker" class="input-label text-black fw-medium">Tijd</label>
+                                <input class="form-input" type="text" id="timepicker" placeholder="-:-">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer p-0 d-flex align-items-center justify-content-between border-0">
+                        <button type="button" class="bg-transparent border-0 p-0 m-0"
+                            data-bs-dismiss="modal">Annuleren</button>
+                        <button type="button" class="button button-radius">Vacature inplannen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL END -->
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery.timepicker.min.js"></script>
+    <script src="./assets/js/select2.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="./assets/js/multiple-uploader.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script>
+
+        $('#datepicker').datepicker({
+            format: "dd/mm/yyyy",
+            language: "nl",
+            autoclose: true
+        });
+
+        let multipleUploader = new MultipleUploader('#multiple-uploader').init({
+            maxUpload: 1, // maximum number of uploaded images
+            maxSize: 2, // in size in mb
+            filesInpName: 'images', // input name sent to backend
+            formSelector: '#my-form', // form selector
+        });
+
+        $(document).ready(function () {
+            $(".singleSelect").select2(
+                {
+                    width: "width: '100%'",
+                }
+            );
+            $("#multiSelect").select2({
+                multiple: true,
+                tags: true,
+                placeholder: "Select multiple"
+            });
+        });
+
+        $('#timepicker').timepicker({
+            timeFormat: 'h:mm p',
+            interval: 60,
+            minTime: '10',
+            maxTime: '6:00pm',
+            defaultTime: '11',
+            startTime: '10:00',
+            dynamic: false,
+            dropdown: true,
+            scrollbar: true,
+            zindex: 1056
+        });
+
+    </script>
+
+</body>
+
+</html>

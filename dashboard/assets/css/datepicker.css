@@ -1,0 +1,44 @@
+.datepicker {
+  width: 250px;
+}
+
+.datepicker table {
+  border-collapse: separate;
+  width: 100%;
+}
+
+.datepicker {
+  padding: 10px;
+}
+
+.day {
+  border: 2px solid var(--gray-tint-6) !important;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.datepicker td,
+.datepicker th {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.datepicker table tr td.day.focused,
+.datepicker table tr td.day:hover,
+.datepicker table tr td.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active:hover {
+  background-color: var(--black) !important;
+  color: var(--white);
+  background-image: none;
+  border-color: var(--black) !important;
+}
+
+.ui-corner-all.ui-state-hover {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--black);
+}
