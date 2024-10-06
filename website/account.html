@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Account | Open Hiring</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/authentication.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner container">
+            <a href="index.html" class="brand-logo">
+                <img src="./assets/images/icons/logo-oh.svg" alt="brand logo" class="img-fluid object-fit-contain" />
+            </a>
+
+            <div class="header-options">
+                <nav class="header-nav list-unstyled pl-0">
+                    <li class="nav-item"><a href="banen.html" class="nav-link">Banen</a></li>
+                    <li class="nav-item"><a href="over-open-hiring.html" class="nav-link">Over Open Hiring</a></li>
+                    <li class="nav-item">
+                        <a href="actueel.html" class="nav-link">Actueel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact-us.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="reacties.html" class="nav-link">Reacties</a>
+                    </li>
+                    <div class="header-buttons flex-wrap d-flex align-items-center d-lg-none">
+                        <a href="javascript:void" class="btn btn-darkgreen">Inloggen</a>
+                        <a href="javascript:void" class="btn btn-outline">Voor werkgevers</a>
+                    </div>
+                </nav>
+            </div>
+
+            <button id="hamburger" class="hamburger d-lg-none">
+                <div></div>
+            </button>
+
+            <div class="header-buttons d-none d-lg-flex align-items-center">
+                <a href="reacties.html" class="nav-link">Reacties</a>
+                <span class="d-inline-flex justify-content-center align-items-center link-label-wrap">I</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="auth-wrap">
+        <div class="authentication-wrap">
+            <h1 class="form-title login">Account</h1>
+            <div class="form-wrap">
+                <form class="account-form">
+                    <div class="form-floating custom-input-wrap mb-5">
+                        <input type="text" class="form-control custom-input" id="floatingInput"
+                            placeholder="E-mailadres" value="" />
+                        <label for="floatingInput" class="darkgreen-tint-2 custom-label">Voornaam</label>
+                    </div>
+                    <div class="form-floating custom-input-wrap mb-5">
+                        <input type="text" class="form-control custom-input" id="floatingInput"
+                            placeholder="E-mailadres" value="" />
+                        <label for="floatingInput" class="darkgreen-tint-2 custom-label">Achternaam</label>
+                    </div>
+                    <div class="form-floating custom-input-wrap mb-5">
+                        <input type="email" class="form-control custom-input" id="floatingInput"
+                            placeholder="E-mailadres" value="" />
+                        <label for="floatingInput" class="darkgreen-tint-2 custom-label">E-mailadres</label>
+                    </div>
+                    <div class="form-floating custom-input-wrap mb-5">
+                        <input type="tel" class="form-control custom-input" id="floatingInput"
+                            placeholder="name@example.com" />
+                        <label for="floatingInput" class="darkgreen-tint-2 custom-label">Telefoonnummer</label>
+                    </div>
+                    <div class="custom-input-wrap form-floating mb-5">
+                        <select class="custom-selectpicker selectpicker" data-style="" data-style-base=""
+                            data-show-tick="true">
+                            <option>Utrecht</option>
+                            <option>Gepubliceerd</option>
+                            <option>Concept</option>
+                            <option>Gepland</option>
+                            <option data-divider="true"></option>
+                            <option>Toon gepauzeerde vacatures</option>
+                        </select>
+                        <label class="floating-label">In welke regio zoek  je een baan?</label>
+                    </div>
+                    <div class="checkbox-content-wrap mb-5">
+                        <span class="d-flex align-items-start">
+                            <input type="checkbox" id="checkboxbtn" />
+                            <label for="checkboxbtn" class="mb-0 text-break p-sm">Ik will op de hoogte worden
+                                gehouden van van leuke banen bij mij in de buurt.
+                            </label>
+                        </span>
+                    </div>
+                    <button type="button" class="btn btn-darkgreen w-100" disabled>Wijzigen</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap-select.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Banen</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/banen.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-inner container">
+        <a href="index.html" class="brand-logo">
+          <img src="./assets/images/icons/logo-oh.svg" alt="brand logo" class="img-fluid object-fit-contain" />
+        </a>
+
+        <div class="header-options">
+          <nav class="header-nav list-unstyled pl-0">
+            <li class="nav-item"><a href="banen.html" class="nav-link active">Banen</a></li>
+            <li class="nav-item"><a href="over-open-hiring.html" class="nav-link">Over Open Hiring</a></li>
+            <li class="nav-item">
+              <a href="actueel.html" class="nav-link">Actueel</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact-us.html" class="nav-link">Contact</a>
+            </li>
+            <div class="header-buttons flex-wrap d-flex align-items-center d-lg-none">
+              <a href="javascript:void" class="btn btn-darkgreen">Inloggen</a>
+              <a href="javascript:void" class="btn btn-outline">Voor werkgevers</a>
+            </div>
+          </nav>
+        </div>
+
+        <button id="hamburger" class="hamburger d-lg-none">
+          <div></div>
+        </button>
+
+        <div class="header-buttons d-none d-lg-flex">
+          <a href="javascript:void" class="btn btn-darkgreen">Inloggen</a>
+          <a href="javascript:void" class="btn btn-outline">Voor werkgevers</a>
+        </div>
+      </div>
+    </header>
+    <section class="banen">
+      <div class="container">
+        <div class="banen-title-wrapper">
+          <h1 class="fw-900">Vind jouw perfecte werkplek.</h1>
+        </div>
+        <div class="banen-content-wrapper">
+          <div class="row gx-5">
+            <div class="col-lg-3 col-12">
+              <div class="filter-wrapper">
+                <div class="locatie-title mb-4">
+                  <p class="fw-500 darkgreen">Locatie en afstand</p>
+                </div>
+                <div class="postcode-wrapper mb-4">
+                  <input type="text" name="postcode" placeholder="Postcode" class="w-100 filter-input-field" />
+                </div>
+                <div class="select-wrapper">
+                  <div class="select-input">
+                    <select class="w-100 filter-input-field filter-select form-control">
+                      <option value="option1">Maximale afstand</option>
+                      <option value="option2">option 2</option>
+                      <option value="option3">option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <hr class="btn-outline my-sm-5 my-4" />
+                <div class="branche-title mb-4">
+                  <p class="fw-500 darkgreen">Branche en type</p>
+                </div>
+                <div class="select-wrapper">
+                  <div class="select-input">
+                    <select class="w-100 filter-input-field filter-select form-control">
+                      <option value="option1">Branche</option>
+                      <option value="option2">option 2</option>
+                      <option value="option3">option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="select-wrapper">
+                  <div class="select-input">
+                    <select class="w-100 filter-input-field filter-select form-control">
+                      <option value="option1">Functietype</option>
+                      <option value="option2">option 2</option>
+                      <option value="option3">option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="btn-outline p-sm btn w-100 fw-500 darkgreen">Reset filters</button>
+              </div>
+            </div>
+            <div class="col-lg-9 col-12">
+              <div>
+                <div class="result-title mb-4">
+                  <h5 class="p-sm fw-300 darkgreen">25 resultaten weergegeven</h5>
+                </div>
+                <div class="result-content-wrapper">
+                  <div class="card-wrapper shadow-sm mb-4">
+                    <a
+                      href="banen-single.html"
+                      class="text-decoration-none card-container d-flex justify-content-between"
+                    >
+                      <div class="card-content">
+                        <div class="card-caption-wrapper">
+                          <p class="card-caption p-sm fw-400">Café September</p>
+                        </div>
+                        <div class="card-title-wrapper mb-3">
+                          <h5 class="card-title">Bediening</h5>
+                        </div>
+                        <div class="card-description-wrapper">
+                          <p class="card-description fw-400">
+                            Wij zijn op zoek naar enthousiaste mensen die ons gezellige bedieningsteam komen versterken.
+                          </p>
+                        </div>
+                        <div class="badge-wrapper">
+                          <span class="badge me-2 me-sm-2 badge-horeca p-sm text-white fw-500">Horeca</span>
+                          <span class="badge p-sm darkgreen part-time fw-500">Part-time</span>
+                        </div>
+                        <div class="card-footer-wrapper">
+                          <div class="card-footer-container mb-0">
+                            <span class="me-3 p-smaller card-footer">Amsterdam</span>
+                            <span class="p-smaller card-footer">Vandaag</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="logo-container d-flex justify-content-center align-items-center">
+                        <img
+                          src="./assets/images/backgrounds/Cengiz, Gerinka, Kenan 2345.jpg"
+                          alt="Cengiz, Gerinka, Kenan 2345"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-wrapper shadow-sm mb-4">
+                    <a
+                      href="banen-single.html"
+                      class="text-decoration-none card-container d-flex justify-content-between"
+                    >
+                      <div class="card-content">
+                        <div class="card-caption-wrapper">
+                          <p class="card-caption p-sm fw-400">La Place</p>
+                        </div>
+                        <div class="card-title-wrapper mb-3">
+                          <h5 class="card-title">Horeca medewerker</h5>
+                        </div>
+                        <div class="card-description-wrapper">
+                          <p class="card-description fw-400">
+                            Of je nou een foodie, horeca liefhebber of koffieleut bent: bij La Place kun jij je hart
+                            ophalen.
+                          </p>
+                        </div>
+                        <div class="badge-wrapper">
+                          <span class="badge me-2 me-sm-2 badge-horeca p-sm text-white fw-500">Horeca</span>
+                          <span class="badge p-sm darkgreen part-time fw-500">Part-time</span>
+                        </div>
+                        <div class="card-footer-wrapper">
+                          <div class="card-footer-container mb-0">
+                            <span class="me-3 p-smaller card-footer">Amsterdam</span>
+                            <span class="p-smaller card-footer">Vandaag</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="logo-container d-flex justify-content-center align-items-center">
+                        <img
+                          src="./assets/images/backgrounds/Cengiz, Gerinka, Kenan 2345.jpg"
+                          alt="Cengiz, Gerinka, Kenan 2345"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-wrapper shadow-sm mb-4">
+                    <a
+                      href="banen-single.html"
+                      class="text-decoration-none card-container d-flex justify-content-between"
+                    >
+                      <div class="card-content">
+                        <div class="card-caption-wrapper">
+                          <p class="card-caption p-sm fw-400">Van der Valk</p>
+                        </div>
+                        <div class="card-title-wrapper mb-3">
+                          <h5 class="card-title">Medewerker Housekeeping</h5>
+                        </div>
+                        <div class="card-description-wrapper">
+                          <p class="card-description fw-400">
+                            Wij zijn op zoek naar mensen die willen shinen. En ons hotel willen laten shinen.
+                          </p>
+                        </div>
+                        <div class="badge-wrapper">
+                          <span class="badge me-2 me-sm-2 badge-horeca p-sm text-white fw-500">Horeca</span>
+                          <span class="badge p-sm darkgreen part-time fw-500">Part-time</span>
+                        </div>
+                        <div class="card-footer-wrapper">
+                          <div class="card-footer-container mb-0">
+                            <span class="me-3 p-smaller card-footer">Amsterdam</span>
+                            <span class="p-smaller card-footer">Vandaag</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="logo-container d-flex justify-content-center align-items-center">
+                        <img
+                          src="./assets/images/backgrounds/Cengiz, Gerinka, Kenan 2345.jpg"
+                          alt="Cengiz, Gerinka, Kenan 2345"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer text-white space-top">
+      <div class="container">
+        <div class="footer-top space-small-top space-bottom">
+          <div class="row gy-5 gy-md-0">
+            <div class="col-6 col-md-3 col-lg-3">
+              <ul class="footer-nav">
+                <h6 class="fw-700 mb-4">Voor werkzoekende</h6>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link link-white">Hoe werkt het</a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link link-white">Vind een baan</a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link link-white">Veelgestelde vragen</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3 col-lg-4">
+              <ul class="footer-nav">
+                <h6 class="fw-700 mb-4">Voor wekgevers</h6>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link link-white">Hoe werkt het</a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link link-white">Speiregels</a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link link-white">Veelgestelde vragen</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3">
+              <ul class="footer-nav">
+                <h6 class="fw-700 mb-4">Over Open Hiring</h6>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link link-white">Ons verhaal</a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link link-white">Ontstaan</a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link link-white">Partners</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+              <ul class="footer-nav">
+                <h6 class="fw-700 mb-4">Contact</h6>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link link-white">LinkedIn</a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link link-white">Twitter</a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link link-white">Facebook</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom space-small-top space-small-bottom">
+        <div class="container">
+          <div class="footer-legal flex-wrap gap-3 gap-sm-5 d-flex justify-content-md-start justify-content-center">
+            <a href="javascript:void(0)" class="link link-gray">Algemene voorwaarden</a>
+            <a href="javascript:void(0)" class="link link-gray">Privacybeleid</a>
+          </div>
+        </div>
+      </div>
+      <a href="index.html" class="brand-logo">
+        <img src="./assets/images/icons/logo-oh.svg" alt="brand logo" class="img-fluid object-fit-contain"
+      /></a>
+    </footer>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

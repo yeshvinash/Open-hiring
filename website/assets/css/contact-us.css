@@ -1,0 +1,27 @@
+.contact-title p {
+  line-height: 1.6;
+  max-width: 65%;
+}
+
+.contact-box {
+  margin-top: 6rem;
+}
+
+.contact-item:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
+.contact-banner {
+  border-radius: 10px;
+}
+
+.contact-item div,
+.contact-item .h6 {
+  line-height: 1.8;
+}
+
+@media (max-width: 991px) {
+  .contact-title p {
+    max-width: 100%;
+  }
+}

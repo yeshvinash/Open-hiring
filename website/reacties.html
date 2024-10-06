@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Reacties | Open Hiring</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/authentication.css">
+    <link rel="stylesheet" href="./assets/css/reacties.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner container">
+            <a href="index.html" class="brand-logo">
+                <img src="./assets/images/icons/logo-oh.svg" alt="brand logo" class="img-fluid object-fit-contain" />
+            </a>
+
+            <div class="header-options">
+                <nav class="header-nav list-unstyled pl-0">
+                    <li class="nav-item"><a href="banen.html" class="nav-link">Banen</a></li>
+                    <li class="nav-item"><a href="over-open-hiring.html" class="nav-link">Over Open Hiring</a></li>
+                    <li class="nav-item">
+                        <a href="actueel.html" class="nav-link">Actueel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact-us.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="reacties.html" class="nav-link">Reacties</a>
+                    </li>
+                    <div class="header-buttons flex-wrap d-flex align-items-center d-lg-none">
+                        <a href="javascript:void" class="btn btn-darkgreen">Inloggen</a>
+                        <a href="javascript:void" class="btn btn-outline">Voor werkgevers</a>
+                    </div>
+                </nav>
+            </div>
+
+            <button id="hamburger" class="hamburger d-lg-none">
+                <div></div>
+            </button>
+
+            <div class="header-buttons d-none d-lg-flex align-items-center">
+                <a href="reacties.html" class="nav-link active">Reacties</a>
+                <span class="d-inline-flex justify-content-center align-items-center link-label-wrap">I</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="space-bottom space-top reacties-wrap">
+        <div class="container">
+            <div class="reacties-content-wrap">
+                <h2 class="fw-900 mb-5">Reacties</h2>
+                <div class="trends-tabs">
+                    <ul class="nav nav-pills d-flex " id="trendsTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="all-trends-tab" data-bs-toggle="pill"
+                                data-bs-target="#all-trends" type="button" role="tab" aria-controls="all-trends"
+                                aria-selected="true">
+                                Aangemeld <span class="d-inline-block number-wrap">1</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="news-trends-tab" data-bs-toggle="pill"
+                                data-bs-target="#news-trends" type="button" role="tab" aria-controls="news-trends"
+                                aria-selected="false">
+                                Geannuleerd <span class="d-inline-block number-wrap">1</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="jobseeker-trends-tab" data-bs-toggle="pill"
+                                data-bs-target="#jobseeker-trends" type="button" role="tab"
+                                aria-controls="jobseeker-trends" aria-selected="false">
+                                Niet gekozen <span class="d-inline-block number-wrap">1</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="trendsTabContent">
+                        <div class="tab-pane fade show active" id="all-trends" role="tabpanel"
+                            aria-labelledby="all-trends-tab" tabindex="0">
+                            <div class="card-wrapper shadow-sm mb-4">
+                                <div class="text-decoration-none card-container d-flex justify-content-between">
+                                    <div class="card-content">
+                                        <div class="card-caption-wrapper">
+                                            <p class="card-caption p-sm fw-400">Café September</p>
+                                        </div>
+                                        <div class="card-title-wrapper mb-3">
+                                            <h5 class="card-title">Bediening</h5>
+                                        </div>
+                                        <div class="card-description-wrapper">
+                                            <p class="card-description fw-400">
+                                                Wij zijn op zoek naar enthousiaste mensen die ons gezellige
+                                                bedieningsteam
+                                                komen versterken.
+                                            </p>
+                                        </div>
+                                        <div class="badge-wrapper">
+                                            <span
+                                                class="badge me-2 me-sm-2 badge-horeca p-sm text-white fw-500">Horeca</span>
+                                            <span class="badge p-sm darkgreen part-time fw-500">Part-time</span>
+                                        </div>
+                                        <div class="card-footer-wrapper">
+                                            <div class="card-footer-container mb-0">
+                                                <span class="me-3 p-smaller card-footer">Amsterdam</span>
+                                                <span class="p-smaller card-footer">Vandaag</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="logo-container d-flex justify-content-center align-items-center">
+                                        <img src="./assets/images/backgrounds/Cengiz, Gerinka, Kenan 2345.jpg"
+                                            alt="Cengiz, Gerinka, Kenan 2345">
+                                    </div>
+                                </div>
+                                <div class="rank-list-wrap">
+                                    <span class="d-block text-break fw-500 mb-1">Je staat op plaats 1 van de 15
+                                        kandidaten</span>
+                                    <span class="d-block text-break p-sm mb-0">Gereagreed op 22 februari 2023</span>
+                                </div>
+                                <div class="d-flex justify-content-between invitation-content-wrap flex-wrap">
+                                    <div>
+                                        <span class="d-block text-break fw-500 mb-1">Cafe September nodigt je graag uit
+                                            om lags te komen!</span>
+                                        <span class="d-block text-break p-sm mb-0 fw-800">Donderdag 23 Februari om 14:00
+                                            uur.</span>
+                                    </div>
+                                    <div class="d-flex flex-row flex-md-column align-items-center align-items-md-stretch justify-content-between flex-shrink-0 mt-md-0 mt-4 tabs-btn-wrap">
+                                        <button type="button" class="btn btn-darkgreen mb-0 mb-md-4">Uitnodigning
+                                            accepteren</button>
+                                        <button type="button" class="btn btn-outline">Ik ben verhinderd</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-wrapper shadow-sm mb-4">
+                                <div class="text-decoration-none card-container d-flex justify-content-between">
+                                    <div class="card-content">
+                                        <div class="card-caption-wrapper">
+                                            <p class="card-caption p-sm fw-400">Café September</p>
+                                        </div>
+                                        <div class="card-title-wrapper mb-3">
+                                            <h5 class="card-title">Bediening</h5>
+                                        </div>
+                                        <div class="card-description-wrapper">
+                                            <p class="card-description fw-400">
+                                                Wij zijn op zoek naar enthousiaste mensen die ons gezellige
+                                                bedieningsteam
+                                                komen versterken.
+                                            </p>
+                                        </div>
+                                        <div class="badge-wrapper">
+                                            <span
+                                                class="badge me-2 me-sm-2 badge-horeca p-sm text-white fw-500">Horeca</span>
+                                            <span class="badge p-sm darkgreen part-time fw-500">Part-time</span>
+                                        </div>
+                                        <div class="card-footer-wrapper">
+                                            <div class="card-footer-container mb-0">
+                                                <span class="me-3 p-smaller card-footer">Amsterdam</span>
+                                                <span class="p-smaller card-footer">Vandaag</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="logo-container d-flex justify-content-center align-items-center">
+                                        <img src="./assets/images/backgrounds/Cengiz, Gerinka, Kenan 2345.jpg"
+                                            alt="Cengiz, Gerinka, Kenan 2345">
+                                    </div>
+                                </div>
+                                <div class="rank-list-wrap">
+                                    <span class="d-block text-break fw-500 mb-1">Je staat op plaats 1 van de 15
+                                        kandidaten</span>
+                                    <span class="d-block text-break p-sm mb-0">Gereagreed op 22 februari 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="news-trends" role="tabpanel" aria-labelledby="news-trends-tab"
+                            tabindex="0">
+                            <div class="card-wrapper shadow-sm mb-4">
+                                <div class="text-decoration-none card-container d-flex justify-content-between">
+                                    <div class="card-content">
+                                        <div class="card-caption-wrapper">
+                                            <p class="card-caption p-sm fw-400">Café September</p>
+                                        </div>
+                                        <div class="card-title-wrapper mb-3">
+                                            <h5 class="card-title">Bediening</h5>
+                                        </div>
+                                        <div class="card-description-wrapper">
+                                            <p class="card-description fw-400">
+                                                Wij zijn op zoek naar enthousiaste mensen die ons gezellige
+                                                bedieningsteam
+                                                komen versterken.
+                                            </p>
+                                        </div>
+                                        <div class="badge-wrapper">
+                                            <span
+                                                class="badge me-2 me-sm-2 badge-horeca p-sm text-white fw-500">Horeca</span>
+                                            <span class="badge p-sm darkgreen part-time fw-500">Part-time</span>
+                                        </div>
+                                        <div class="card-footer-wrapper">
+                                            <div class="card-footer-container mb-0">
+                                                <span class="me-3 p-smaller card-footer">Amsterdam</span>
+                                                <span class="p-smaller card-footer">Vandaag</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="logo-container d-flex justify-content-center align-items-center">
+                                        <img src="./assets/images/backgrounds/Cengiz, Gerinka, Kenan 2345.jpg"
+                                            alt="Cengiz, Gerinka, Kenan 2345">
+                                    </div>
+                                </div>
+                                <div class="rank-list-wrap">
+                                    <span class="d-block text-break fw-500 mb-1">Je staat op plaats 1 van de 15
+                                        kandidaten</span>
+                                    <span class="d-block text-break p-sm mb-0">Gereagreed op 22 februari 2023</span>
+                                </div>
+                                <div class="d-flex justify-content-between invitation-content-wrap flex-wrap">
+                                    <div>
+                                        <span class="d-block text-break fw-500 mb-1">Cafe September nodigt je graag uit
+                                            om lags te komen!</span>
+                                        <span class="d-block text-break p-sm mb-0 fw-800">Donderdag 23 Februari om 14:00
+                                            uur.</span>
+                                    </div>
+                                    <div class="d-flex flex-row flex-md-column align-items-center align-items-md-stretch justify-content-between flex-shrink-0 mt-md-0 mt-4 tabs-btn-wrap">
+                                        <button type="button" class="btn btn-darkgreen mb-0 mb-md-4">Uitnodigning
+                                            accepteren</button>
+                                        <button type="button" class="btn btn-outline">Ik ben verhinderd</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="jobseeker-trends" role="tabpanel"
+                            aria-labelledby="jobseeker-trends-tab" tabindex="0">
+                            <div class="card-wrapper shadow-sm mb-4">
+                                <div class="text-decoration-none card-container d-flex justify-content-between">
+                                    <div class="card-content">
+                                        <div class="card-caption-wrapper">
+                                            <p class="card-caption p-sm fw-400">Café September</p>
+                                        </div>
+                                        <div class="card-title-wrapper mb-3">
+                                            <h5 class="card-title">Bediening</h5>
+                                        </div>
+                                        <div class="card-description-wrapper">
+                                            <p class="card-description fw-400">
+                                                Wij zijn op zoek naar enthousiaste mensen die ons gezellige
+                                                bedieningsteam
+                                                komen versterken.
+                                            </p>
+                                        </div>
+                                        <div class="badge-wrapper">
+                                            <span
+                                                class="badge me-2 me-sm-2 badge-horeca p-sm text-white fw-500">Horeca</span>
+                                            <span class="badge p-sm darkgreen part-time fw-500">Part-time</span>
+                                        </div>
+                                        <div class="card-footer-wrapper">
+                                            <div class="card-footer-container mb-0">
+                                                <span class="me-3 p-smaller card-footer">Amsterdam</span>
+                                                <span class="p-smaller card-footer">Vandaag</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="logo-container d-flex justify-content-center align-items-center">
+                                        <img src="./assets/images/backgrounds/Cengiz, Gerinka, Kenan 2345.jpg"
+                                            alt="Cengiz, Gerinka, Kenan 2345">
+                                    </div>
+                                </div>
+                                <div class="rank-list-wrap">
+                                    <span class="d-block text-break fw-500 mb-1">Je staat op plaats 1 van de 15
+                                        kandidaten</span>
+                                    <span class="d-block text-break p-sm mb-0">Gereagreed op 22 februari 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap-select.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+
+</body>
+
+</html>

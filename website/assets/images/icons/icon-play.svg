@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-playbutton</title>
+    <g id="Website---Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design---Baan-single-" transform="translate(-460.000000, -1356.000000)" fill-rule="nonzero">
+            <g id="icon-playbutton" transform="translate(460.000000, 1356.000000)">
+                <circle id="Oval" fill="#AA0061" cx="20" cy="20" r="20"></circle>
+                <path d="M25.8817806,18.0452669 L18.0114986,13.4503966 C17.3981041,13.0488597 16.6466376,13.0488597 16.0332431,13.4503966 C15.433241,13.9217734 15.0978566,14.7270117 15.1540184,15.5613631 L15.1540184,24.6948111 C15.1004148,25.528608 15.4352166,26.3324473 16.0332431,26.8057778 C16.3057431,26.9950045 16.6187784,27.0925067 16.9368907,27.0872398 C17.3116356,27.0798589 17.6796697,26.9714137 18.0114986,26.7705948 L25.8817806,22.1897977 C27.0479744,21.4861422 27.2189349,20.6136094 27.2189349,20.1351237 C27.2189349,19.656638 27.0479744,18.7278127 25.8817806,18.0452669 Z" id="Path" fill="#FAFBF9"></path>
+            </g>
+        </g>
+    </g>
+</svg>
