@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/vacancies.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>Vacancies</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div id="overlay"></div>
+        <aside class="sidebar-wrapper">
+            <div class="sidebar-header">
+                <a href="index.html" class="brand-logo">Open Hiring</a>
+            </div>
+            <div class="sidebar-content">
+                <ul class="sidebar-link-wrap">
+                    <li class="mb-3">
+                        <a href="index.html"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="dashboard" class="link-icon"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <span class="text-uppercase mb-2 fw-medium sidebar-title">organisatie</span>
+                    <li class="mb-1">
+                        <a href="javascript:void(0)"
+                            class="sidebar-link active text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="briefcase" class="link-icon"></i>
+                            Vacatures
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="javascript:void(0)"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="building" class="link-icon"></i>
+                            Bedrijfsprofiel
+                        </a>
+                    </li>
+                    <span class="text-uppercase mb-2 fw-medium sidebar-title">hulp</span>
+                    <li class="mb-1">
+                        <a href="javascript:void(0)"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="tools" class="link-icon"></i>
+                            Checklist
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="javascript:void(0)"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="help" class="link-icon"></i>
+                            Veelgestelde vragen
+                        </a>
+                    </li>
+                    <li class="mt-auto mb-1">
+                        <a href="javascript:void(0)"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="user" class="link-icon"></i>
+                            Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"
+                            class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                            <i data-icon="logOut" class="link-icon"></i>
+                            Uitloggen
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <header class="custom-header">
+                <a href="index.html" class="brand-logo">Open Hiring</a>
+                <div class="d-flex align-items-center justify-content-end w-100">
+                    <button type="button" class="header-btn"><i data-icon="plus"></i></button>
+                    <button type="button" class="header-btn"><i data-icon="notification"></i></button>
+                    <button type="button" class="header-btn profile"></button>
+                    <button id="hamburger" class="hamburger d-xl-none">
+                        <div></div>
+                    </button>
+                </div>
+            </header>
+            <div class="content-wrap">
+                <div>
+                    <div class="vacancies-table-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <h2 class="h2 mb-0">Vacatures</h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <select class="form-select select-wrap d-none d-md-block"
+                                aria-label="Default select example">
+                                <option selected="">Toon: Alles</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <button class="button flex-shrink-0">Nieuwe vacature</button>
+                        </div>
+                    </div>
+                    <div class="d-block d-md-none custom-dropdown-spacing">
+                        <select class="form-select select-wrap" aria-label="Default select example">
+                            <option selected="">Toon: Alles</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table vacancies-table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">FUNCTIETITEL</th>
+                                    <th scope="col">KANDIDATEN</th>
+                                    <th scope="col">DATUM</th>
+                                    <th scope="col">STATUS</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Bediening</td>
+                                    <td><span class="fw-bolder">0</span> / <span>25</span></td>
+                                    <td class="date-col"><span class="d-block">Gepubliceerd</span><span
+                                            class="d-block">31 januari
+                                            2023</span></td>
+                                    <td>
+                                        <div>
+                                            <span class="status-label">GEPUBLICEERD</span>
+                                        </div>
+                                    </td>
+                                    <td  class="text-end">
+                                        <div class="dropdown custom-dropdown">
+                                            <button class="btn btn-transparent dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="more-icon"><i data-icon="more"></i></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Live vacature bekijken</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Vacature pauzeren</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Bediening</td>
+                                    <td></td>
+                                    <td><span class="d-block">Laatste wiziging </span><span class="d-block">31 januari
+                                            2023</span>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <span class="status-label">GEPUBLICEERD</span>
+                                        </div>
+                                    </td>
+                                    <td  class="text-end">
+                                        <div class="dropdown custom-dropdown">
+                                            <button class="btn btn-transparent dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="more-icon"><i data-icon="more"></i></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Live vacature bekijken</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Vacature pauzeren</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Bediening</td>
+                                    <td></td>
+                                    <td><span class="d-block">Gepland op</span><span class="d-block">5 februari
+                                            2023</span></td>
+                                    <td>
+                                        <div>
+                                            <span class="status-label">Gepland</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <div class="dropdown custom-dropdown">
+                                            <button class="btn btn-transparent dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="more-icon"><i data-icon="more"></i></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Live vacature bekijken</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Vacature pauzeren</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>
