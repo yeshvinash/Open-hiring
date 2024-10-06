@@ -1,0 +1,142 @@
+@media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header-inner {
+    max-width: 1500px;
+  }
+}
+
+@media (max-width: 1599px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1429px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1365px) {
+  html {
+    font-size: 7px;
+  }
+
+  .datepicker {
+    width: 250px;
+  }
+
+  .datepicker td,
+  .datepicker th {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .custom-header .brand-logo {
+    display: block;
+    z-index: 11;
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+  }
+
+  .sidebar-wrapper {
+    height: 100%;
+    width: 280px;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-shadow: 0 1px 0 rgb(17 17 26 / 5%), 0 0 8px rgb(17 17 26 / 10%);
+    box-shadow: 0 1px 0 rgb(17 17 26 / 5%), 0 0 8px rgb(17 17 26 / 10%);
+  }
+
+  .menu-open .sidebar-wrapper {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .main {
+    width: 100%;
+    margin-left: unset;
+  }
+
+  .menu-open,
+  .menu-open .content-wrap {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 5px;
+  }
+
+  .brand-logo {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-wrap {
+    padding: 10px;
+  }
+
+  .custom-header {
+    padding: 10px;
+  }
+
+  .brand-logo {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 80px;
+  }
+
+  .header-btn:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .brand-logo {
+    font-size: 20px;
+  }
+
+  .header-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header-btn i {
+    width: 15px;
+    height: 15px;
+  }
+
+  .notification-dot {
+    top: 6px;
+    right: 8px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .hamburger {
+    width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-wrap {
+    padding: 0;
+  }
+}

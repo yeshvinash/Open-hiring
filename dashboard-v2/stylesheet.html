@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <button class="button">Button</button>
+      <button class="button button-bordered">bordered</button>
+      <button class="button button-gray">gray</button>
+      <button class="button" disabled>disabled</button>
+    </div>
+
+    <h1 class="h1">hello world</h1>
+    <h2 class="h2">hello world</h2>
+    <h3 class="h3">hello world</h3>
+    <h4 class="h4">hello world</h4>
+    <h5 class="h5">hello world</h5>
+    <h6 class="h6">hello world</h6>
+    <!-- Text input start -->
+    <div class="form-floating custom-input-wrap mb-3">
+      <input type="email" class="form-control custom-input" id="floatingInput" placeholder="name@example.com" />
+      <label for="floatingInput" class="darkgreen-tint-2 custom-label">Organisatie</label>
+    </div>
+    <!-- Text input end -->
+
+    <div class="custom-input-wrap form-floating">
+      <select class="custom-selectpicker selectpicker" data-style="" data-style-base="" data-show-tick="true">
+        <option>Alles</option>
+        <option>Gepubliceerd</option>
+        <option>Concept</option>
+        <option>Gepland</option>
+        <option data-divider="true"></option>
+        <option>Toon gepauzeerde vacatures</option>
+      </select>
+      <label class="floating-label">Select</label>
+    </div>
+
+    <!-- Password-input start -->
+    <div class="form-floating mb-3 custom-input-wrap password-input-wrap icon-append">
+      <input class="form-input form-control custom-input" type="password" id="password" placeholder="password" />
+      <label for="password" class="custom-label darkgreen-tint-2">Wachtwoord</label>
+      <button type="button" class="password-toggler input-icon" data-toggle="password">
+        <i data-icon="eye" class="eye-show"></i>
+        <i data-icon="eyeOff" class="eye-hide d-none"></i>
+      </button>
+    </div>
+    <!-- Password-input end -->
+
+    <!-- Text-area start -->
+    <div class="form-floating custom-input-wrap custom-textarea-wrap">
+      <textarea class="form-control custom-input" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+      <label for="floatingTextarea custom-label darkgreen-tint-2">Comments</label>
+    </div>
+    <!-- Text-area end -->
+
+    <div class="custom-tag-select-wrap">
+      <div class="form-floating custom-input-wrap icon-append mb-3">
+        <input
+          type="text"
+          class="form-control custom-input"
+          id="jobRequoirementsList"
+          placeholder="Enter Job Requirements"
+        />
+        <label for="jobRequoirementsList" class="darkgreen-tint-2 custom-label">Vereiste vaardigheden</label>
+        <button type="button" class="add-tag-btn input-icon">Voeg toe</button>
+      </div>
+
+      <ul class="custom-tag-list"></ul>
+    </div>
+
+    <!-- Multiple select start -->
+    <div class="d-flex flex-column align-items-end p-5 gap-2">
+      <select class="custom-selectpicker selectpicker" data-style="" data-style-base="" data-show-tick="true">
+        <option>Alles</option>
+        <option>Gepubliceerd</option>
+        <option>Concept</option>
+        <option>Gepland</option>
+        <option data-divider="true"></option>
+        <option>Toon gepauzeerde vacatures</option>
+      </select>
+    </div>
+    <!-- Multiple select start -->
+    <div class="d-flex flex-column align-items-end p-5 gap-2">
+      <select class="custom-selectpicker selectpicker" data-style="" data-style-base="" data-show-tick="true">
+        <option>Alles</option>
+        <option>Gepubliceerd</option>
+        <option>Concept</option>
+        <option>Gepland</option>
+        <option data-divider="true"></option>
+        <option>Toon gepauzeerde vacatures</option>
+      </select>
+
+      <select
+        class="custom-selectpicker custom-selectpicker-multiple selectpicker"
+        data-style=""
+        data-style-base=""
+        data-show-tick="true"
+        multiple
+      >
+        <option>Alles</option>
+        <option>Gepubliceerd</option>
+        <option>Concept</option>
+        <option>Gepland</option>
+        <option data-divider="true"></option>
+        <option>Toon gepauzeerde vacatures</option>
+      </select>
+
+      <select
+        class="custom-selectpicker custom-selectpicker-rounded selectpicker"
+        data-style=""
+        data-style-base=""
+        data-show-tick="true"
+      >
+        <option>Alles</option>
+        <option>Gepubliceerd</option>
+        <option>Concept</option>
+        <option>Gepland</option>
+        <option data-divider="true"></option>
+        <option>Toon gepauzeerde vacatures</option>
+      </select>
+
+      <select
+        class="custom-selectpicker custom-selectpicker-rounded custom-selectpicker-multiple selectpicker"
+        data-style=""
+        data-style-base=""
+        data-show-tick="true"
+        multiple
+      >
+        <option>Alles</option>
+        <option>Gepubliceerd</option>
+        <option>Concept</option>
+        <option>Gepland</option>
+        <option data-divider="true"></option>
+        <option>Toon gepauzeerde vacatures</option>
+      </select>
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap-select.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/file-uploader.js"></script>
+  </body>
+</html>

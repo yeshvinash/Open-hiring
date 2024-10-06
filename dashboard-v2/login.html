@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Open Hiring</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- DATEPICKER -->
+    <link rel="stylesheet" href="./assets/css/bootstrap-datepicker.min.css" />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/authentication.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <div class="auth-wrap">
+      <header class="auth-header">
+        <div class="header-inner container">
+          <a href="index.html" class="brand-logo">
+            <img src="./assets/images/logo/logo-oh.svg" class="img-fluid d-block" />
+          </a>
+          <button class="button button-bordered">Account aanmaken</button>
+        </div>
+      </header>
+      <div class="authentication-wrap">
+        <h1 class="form-title login">Log in bij Open Hiring</h1>
+        <div class="form-wrap">
+          <form>
+            <div class="form-floating custom-input-wrap mb-5">
+              <input
+                type="email"
+                class="form-control custom-input"
+                id="floatingInput"
+                placeholder="E-mailadres"
+                value="julian@september.digital"
+              />
+              <label for="floatingInput" class="darkgreen-tint-2 custom-label">E-mailadres</label>
+            </div>
+            <div class="form-floating mb-4 custom-input-wrap password-input-wrap icon-append is-error">
+              <input
+                class="form-input form-control custom-input"
+                type="password"
+                id="password"
+                placeholder="password"
+                value="123456"
+              />
+              <label for="password" class="custom-label">Wachtwoord</label>
+              <button type="button" class="password-toggler input-icon" data-toggle="password">
+                <i data-icon="eye" class="eye-show"></i>
+                <i data-icon="eyeOff" class="eye-hide d-none"></i>
+              </button>
+              <div class="invalid-feedback">Wachtwoord onjuist</div>
+            </div>
+            <a href="set-password.html" class="link underlined paragraph-xs text-end d-block p-2 position-relative z-1"
+              >Wachtwoord vergeten?</a
+            >
+
+            <button class="button w-100 authenticatiopn-btn mt-4">Inloggen</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQUERY -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>

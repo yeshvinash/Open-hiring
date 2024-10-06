@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Open Hiring</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <div id="overlay"></div>
+      <aside class="sidebar-wrapper">
+        <div class="sidebar-header">
+          <a href="index.html" class="brand-logo">
+            <img src="./assets/images/logo/logo-oh.svg" class="img-fluid d-block" />
+          </a>
+        </div>
+        <div class="sidebar-content">
+          <ul class="sidebar-link-wrap">
+            <span class="text-capitalize mb-2 fw-medium sidebar-title">home</span>
+            <li class="mb-3">
+              <a href="index.html" class="sidebar-link active text-decoration-none fw-medium d-flex align-items-center">
+                <i data-icon="dashboard" class="link-icon"></i>
+                Dashboard
+              </a>
+            </li>
+            <span class="text-capitalize mb-2 fw-medium sidebar-title">organisatie</span>
+            <li class="mb-1">
+              <a href="./vacancies.html" class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                <i data-icon="briefcase" class="link-icon"></i>
+                Vacatures
+              </a>
+            </li>
+            <li class="mb-3 sidebar-bottom-border">
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="company" class="link-icon"></i>
+                Bedrijfsprofiel
+              </a>
+            </li>
+            <span class="text-capitalize mb-2 fw-medium sidebar-title">hulp</span>
+            <li class="mb-1">
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="tools" class="link-icon"></i>
+                Checklist
+              </a>
+            </li>
+            <li class="mb-3">
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="faq" class="link-icon"></i>
+                Veelgestelde vragen
+              </a>
+            </li>
+            <li class="mt-auto mb-1">
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="account" class="link-icon"></i>
+                Account
+              </a>
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="logout" class="link-icon"></i>
+                Uitloggen
+              </a>
+            </li>
+            <li class="mt-4 d-block d-xl-none">
+              <button class="button">Vacature plaatsen</button>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="custom-header">
+          <div class="d-flex align-items-center">
+            <a href="index.html" class="brand-logo">
+              <img src="./assets/images/logo/logo-oh.svg" class="img-fluid d-block" />
+            </a>
+            <div>
+              <h6>Vacatures</h6>
+              <span>Café September</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end">
+            <div class="dropdown">
+              <button type="button" class="header-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                <i data-icon="notification"></i>
+                <div class="notification-dot"></div>
+              </button>
+              <ul class="dropdown-menu notification-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <div class="notification-no">#1</div>
+                    <div>
+                      <h6 class="fw-normal">Kandidaat #1</h6>
+                      <div class="notification-details">
+                        <span>Vr 17 feb</span>
+                        <span class="position-relative notification-name">Bediening</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <div class="notification-no">#2</div>
+                    <div>
+                      <h6 class="fw-normal">Kandidaat #1</h6>
+                      <div class="notification-details">
+                        <span>Vr 17 feb</span>
+                        <span class="position-relative notification-name">Bediening</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button class="button d-none d-xl-block">Vacature plaatsen</button>
+            <button id="hamburger" class="hamburger d-xl-none">
+              <div></div>
+            </button>
+          </div>
+        </header>
+        <div class="content-wrap">
+          <div class="dashboard-title">
+            <h2 class="fw-800 mb-0">Volg deze eenvoudige stappen om voorbereid aan de slag te gaan!</h2>
+          </div>
+          <div class="dashboard-steps-wrapper">
+            <div class="d-flex align-items-center justify-content-between listed-steps-wrap flex-wrap">
+              <div class="steps-content-wrap">
+                <h5 class="h5 fw-medium text-break">Interne communicatie</h5>
+                <p class="mb-0 text-break">Impedit omnis et autem odio sequi et repellendus sit odit tenetur.</p>
+              </div>
+              <div class="d-flex align-items-center flex-shrink-0">
+                <a href="javascript:void(0)" class="d-inline-block me-5 link">Meer info</a>
+                <button class="button" disabled="">Voltooid</button>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between listed-steps-wrap flex-wrap">
+              <div class="steps-content-wrap">
+                <h5 class="h5 fw-medium text-break">Ondersteuning van medewerkers</h5>
+                <p class="mb-0 text-break">Impedit omnis et autem odio sequi et repellendus sit odit tenetur.</p>
+              </div>
+              <div class="d-flex align-items-center flex-shrink-0">
+                <button class="button">Ga naar</button>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between listed-steps-wrap flex-wrap">
+              <div class="steps-content-wrap">
+                <h5 class="h5 fw-medium text-break">Vacature opstellen</h5>
+                <p class="mb-0 text-break">Impedit omnis et autem odio sequi et repellendus sit odit tenetur.</p>
+              </div>
+              <div class="d-flex align-items-center flex-shrink-0">
+                <a href="javascript:void(0)" class="d-inline-block me-5 link">Meer info</a>
+                <button class="button" disabled="">Voltooid</button>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between listed-steps-wrap flex-wrap">
+              <div class="steps-content-wrap">
+                <h5 class="h5 fw-medium text-break">Procedure vacaturewachtlijst inrichten</h5>
+                <p class="mb-0 text-break">Impedit omnis et autem odio sequi et repellendus sit odit tenetur.</p>
+              </div>
+              <div class="d-flex align-items-center flex-shrink-0">
+                <button class="button">Ga naar</button>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between listed-steps-wrap flex-wrap">
+              <div class="steps-content-wrap">
+                <h5 class="h5 fw-medium text-break">Externe communicatie inrichten</h5>
+                <p class="mb-0 text-break">Impedit omnis et autem odio sequi et repellendus sit odit tenetur.</p>
+              </div>
+              <div class="d-flex align-items-center flex-shrink-0">
+                <button class="button">Ga naar</button>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between listed-steps-wrap flex-wrap">
+              <div class="steps-content-wrap">
+                <h5 class="h5 fw-medium text-break">Informatiebijeenkomst organiseren</h5>
+                <p class="mb-0 text-break">Impedit omnis et autem odio sequi et repellendus sit odit tenetur.</p>
+              </div>
+              <div class="d-flex align-items-center flex-shrink-0">
+                <button class="button">Ga naar</button>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between listed-steps-wrap flex-wrap">
+              <div class="steps-content-wrap">
+                <h5 class="h5 fw-medium text-break">Open Hiring deelnemer in dienst</h5>
+                <p class="mb-0 text-break">Impedit omnis et autem odio sequi et repellendus sit odit tenetur.</p>
+              </div>
+              <div class="d-flex align-items-center flex-shrink-0">
+                <button class="button">Ga naar</button>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between listed-steps-wrap flex-wrap">
+              <div class="steps-content-wrap">
+                <h5 class="h5 fw-medium text-break">Introductietraject inrichten</h5>
+                <p class="mb-0 text-break">Impedit omnis et autem odio sequi et repellendus sit odit tenetur.</p>
+              </div>
+              <div class="d-flex align-items-center flex-shrink-0">
+                <button class="button">Ga naar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQUERY -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>

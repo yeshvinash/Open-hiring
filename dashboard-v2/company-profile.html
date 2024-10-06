@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/dashboard.css" />
+    <link rel="stylesheet" href="./assets/css/company-profile.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <div id="overlay"></div>
+      <aside class="sidebar-wrapper">
+        <div class="sidebar-header">
+          <a href="index.html" class="brand-logo">
+            <img src="./assets/images/logo/logo-oh.svg" alt="" class="img-fluid" />
+          </a>
+        </div>
+        <div class="sidebar-content">
+          <ul class="sidebar-link-wrap">
+            <span class="text-capitalize mb-2 fw-medium sidebar-title">home</span>
+            <li class="mb-3">
+              <a href="index.html" class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                <i data-icon="dashboard" class="link-icon"></i>
+                Dashboard
+              </a>
+            </li>
+            <span class="text-capitalize mb-2 fw-medium sidebar-title">organisatie</span>
+            <li class="mb-1">
+              <a href="./vacancies.html" class="sidebar-link text-decoration-none fw-medium d-flex align-items-center">
+                <i data-icon="briefcase" class="link-icon"></i>
+                Vacatures
+              </a>
+            </li>
+            <li class="mb-3 sidebar-bottom-border">
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="company" class="link-icon"></i>
+                Bedrijfsprofiel
+              </a>
+            </li>
+            <span class="text-capitalize mb-2 fw-medium sidebar-title">hulp</span>
+            <li class="mb-1">
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="tools" class="link-icon"></i>
+                Checklist
+              </a>
+            </li>
+            <li class="mb-3">
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="faq" class="link-icon"></i>
+                Veelgestelde vragen
+              </a>
+            </li>
+            <li class="mt-auto mb-1">
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="account" class="link-icon"></i>
+                Account
+              </a>
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="sidebar-link text-decoration-none fw-medium d-flex align-items-center"
+              >
+                <i data-icon="logout" class="link-icon"></i>
+                Uitloggen
+              </a>
+            </li>
+            <li class="mt-4 d-block d-xl-none">
+              <button class="button">Vacature plaatsen</button>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main">
+        <header class="custom-header">
+          <div class="d-flex align-items-center">
+            <a href="index.html" class="brand-logo">
+              <img src="./assets/images/logo/logo-oh.svg" alt="" class="img-fluid" />
+            </a>
+            <div>
+              <h6>Vacatures</h6>
+              <span>Café September</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end">
+            <div class="dropdown">
+              <button type="button" class="header-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                <i data-icon="notification"></i>
+                <div class="notification-dot"></div>
+              </button>
+              <ul class="dropdown-menu notification-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <div class="notification-no">#1</div>
+                    <div>
+                      <h6 class="fw-normal">Kandidaat #1</h6>
+                      <div class="notification-details">
+                        <span>Vr 17 feb</span>
+                        <span class="position-relative notification-name">Bediening</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <div class="notification-no">#2</div>
+                    <div>
+                      <h6 class="fw-normal">Kandidaat #1</h6>
+                      <div class="notification-details">
+                        <span>Vr 17 feb</span>
+                        <span class="position-relative notification-name">Bediening</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button class="button d-none d-xl-block">Vacature plaatsen</button>
+            <button id="hamburger" class="hamburger d-xl-none">
+              <div></div>
+            </button>
+          </div>
+        </header>
+        <div class="content-wrap">
+          <div class="vacature-aanmaken">
+            <div class="container-fluid">
+              <div class="row justify-content-between">
+                <div class="col-xxl-9 col-md-8 col-12 vacature-aanmaken-wrapper">
+                  <div class="mb-5 profiel-title-wrapper">
+                    <h2 class="fw-800">Profiel</h2>
+                  </div>
+                  <div class="input-container">
+                    <div class="form-floating custom-input-wrap custom-text-wrap mb-3">
+                      <input
+                        type="text"
+                        class="form-control custom-input"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput" class="darkgreen-tint-2 custom-label">Organisatie</label>
+                    </div>
+                  </div>
+                  <div class="input-container">
+                    <div class="form-floating custom-input-wrap custom-textarea-wrap">
+                      <textarea
+                        class="form-control custom-input"
+                        maxlength="500"
+                        placeholder="Leave a comment here"
+                        id="floatingTextarea"
+                        data-input-type="textarea-counter"
+                      ></textarea>
+                      <label for="floatingTextarea custom-label darkgreen-tint-2">Omschrijving</label>
+                      <div class="d-flex justify-content-between ps-4 mt-2 pe-4">
+                        <label for="" class="input-label">Korte omschrijving van de organisatie</label>
+                        <div data-counter-value="" class="counter ps-3">0/500</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wijzigingen-btn-wrapper">
+                    <button class="button ms-auto d-block">Wijzigingen opslaan</button>
+                  </div>
+                  <hr class="create-vacancy-divider" />
+                  <div>
+                    <div class="mb-5">
+                      <h2 class="fw-800">Branding</h2>
+                    </div>
+                    <div class="input-container">
+                      <div class="custom-uploader">
+                        <label for="uploader1" class="custom-uploader-label">
+                          <input type="file" id="uploader1" name="image-uploader-1" accept="image/png, image/jpeg" />
+                          <!-- FOR IMAGES: accept="image/png, image/jpeg" -->
+                          <!-- FOR VIDEOS: accept="video/mp4" -->
+
+                          <div class="custom-uploader-inner uploader-empty">
+                            <div>
+                              <h6 class="paragraph-sm uploader-file-label darkgreen">Upload het logo</h6>
+                              <p class="paragraph-xs darkgreen uploader-file-type mb-0">JPEG or PNG (350 x 175px)</p>
+                            </div>
+                            <div class="flex-shrink-0 ms-auto file-add-btn-wrap">
+                              <div class="button file-add-btn">Kies bestand</div>
+                            </div>
+                          </div>
+                        </label>
+
+                        <div class="custom-uploader-inner uploader-content d-none">
+                          <div class="custom-uploader-preview flex-shrink-0 ratio ratio-16x9">
+                            <video src="" class="d-none"></video>
+                            <img src="" alt="" class="d-none object-fit-cover" />
+                          </div>
+                          <div class="file-info-wrap">
+                            <h6 class="paragraph-sm uploader-file-name darkgreen"></h6>
+                            <p class="paragraph-xs darkgreen uploader-file-size mb-0"></p>
+                          </div>
+                          <div class="flex-shrink-0 ms-auto uploader-cancel-btn-wrap">
+                            <button class="button button-bordered uploader-cancel-btn">Verwijderen</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <div class="custom-uploader">
+                        <label for="uploader2" class="custom-uploader-label">
+                          <input type="file" id="uploader2" name="image-uploader-1" accept="image/png, image/jpeg" />
+                          <!-- FOR IMAGES: accept="image/png, image/jpeg" -->
+                          <!-- FOR VIDEOS: accept="video/mp4" -->
+
+                          <div class="custom-uploader-inner uploader-empty">
+                            <div>
+                              <h6 class="paragraph-sm uploader-file-label darkgreen">Upload een banner</h6>
+                              <p class="paragraph-xs darkgreen uploader-file-type mb-0">JPEG or PNG (430 x 250px)</p>
+                            </div>
+                            <div class="flex-shrink-0 ms-auto file-add-btn-wrap">
+                              <div class="button file-add-btn">Kies bestand</div>
+                            </div>
+                          </div>
+                        </label>
+
+                        <div class="custom-uploader-inner uploader-content d-none">
+                          <div class="custom-uploader-preview flex-shrink-0 ratio ratio-16x9">
+                            <video src="" class="d-none"></video>
+                            <img src="" alt="" class="d-none object-fit-cover" />
+                          </div>
+                          <div>
+                            <h6 class="paragraph-sm uploader-file-name darkgreen"></h6>
+                            <p class="paragraph-xs darkgreen uploader-file-size mb-0"></p>
+                          </div>
+                          <div class="flex-shrink-0 ms-auto uploader-cancel-btn-wrap">
+                            <button class="button button-bordered uploader-cancel-btn">Verwijderen</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="paragraph-sm fw-normal uploader-tip">
+                          Deze afbeelding wordt bovenaan de vacaturepagina getoond.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="create-vacancy-divider" />
+                  <div>
+                    <div>
+                      <div class="mb-5">
+                        <h2 class="fw-800">Informatie</h2>
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <div class="input-container">
+                        <div class="form-floating custom-select-wrap">
+                          <select
+                            class="form-select custom-input"
+                            id="floatingSelect"
+                            aria-label="Floating label select example"
+                          >
+                            <option selected>Horeca</option>
+                            <option value="1">Full-time</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <label for="floatingSelect" class="custom-select-label">Branche</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <div class="input-container">
+                        <div class="form-floating custom-select-wrap">
+                          <select
+                            class="form-select custom-input"
+                            id="floatingSelect"
+                            aria-label="Floating label select example"
+                          >
+                            <option selected>11 tot 50 medewerkers</option>
+                            <option value="1">Full-time</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <label for="floatingSelect" class="custom-select-label">Aantal medewerkers</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <div class="form-floating custom-input-wrap custom-text-wrap mb-3">
+                        <input type="tel" class="form-control custom-input" id="floatingInput" placeholder="93056589" />
+                        <label for="floatingInput" class="darkgreen-tint-2 custom-label">Kvk-nummer</label>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="button ms-auto d-block">Wijzigingen opslaan</button>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <div class="mb-5">
+                        <h2 class="fw-800">Locatie</h2>
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <div class="form-floating custom-input-wrap custom-text-wrap mb-3">
+                        <input
+                          type="text"
+                          class="form-control custom-input"
+                          id="floatingInput"
+                          placeholder="name@example.com"
+                        />
+                        <label for="floatingInput" class="darkgreen-tint-2 custom-label">Straatnaam & huisnummer</label>
+                      </div>
+                    </div>
+                    <div class="input-container d-flex justify-content-between">
+                      <div class="form-floating custom-input-wrap custom-text-wrap mb-3 w-100 postcode-input-wrap">
+                        <input
+                          type="text"
+                          class="form-control custom-input"
+                          id="floatingInput"
+                          placeholder="name@example.com"
+                        />
+                        <label for="floatingInput" class="darkgreen-tint-2 custom-label">Postcode</label>
+                      </div>
+                      <div class="form-floating custom-input-wrap custom-text-wrap mb-3 w-100">
+                        <input
+                          type="text"
+                          class="form-control custom-input"
+                          id="floatingInput"
+                          placeholder="name@example.com"
+                        />
+                        <label for="floatingInput" class="darkgreen-tint-2 custom-label">Plaatsnaam</label>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="button ms-auto d-block">Wijzigingen opslaan</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-md-4 col-12 vacature">
+                  <div class="vacature-wrapper">
+                    <div class="company-btn-wrap">
+                      <div>
+                        <h6 class="mb-lg-4 mb-5 fw-bold">Bedrijfsprofiel</h6>
+                        <div class="custom-btn-group vacancy-btn-wrap">
+                          <button class="button button-radius button-bordered">Bekijken voorbeeld</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap-select.min.js"></script>
+    <script src="./assets/js/file-uploader.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
+</html>
