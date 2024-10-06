@@ -24,4 +24,4 @@ Open-Hiring is an inclusive platform that provides job opportunities without the
      - View and manage candidate applications.
        
 - **Clone the Repository:**
-  https://github.com/yeshvinash/GrapeVyne.git
+https://github.com/yeshvinash/Open-hiring.git
