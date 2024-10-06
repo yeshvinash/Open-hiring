@@ -1,0 +1,126 @@
+.auth-wrap {
+    background-color: var(--lightgreen-tint-5);
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: column;
+}
+
+.authentication-wrap {
+    width: 100%;
+    max-width: 43rem;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.form-title {
+    font-weight: 800;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.account-form .btn {
+    padding: 16px 15px;
+}
+
+header .nav-link.active::before {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 4px;
+    background-color: yellow;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.link-label-wrap {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--darkgreen);
+    color: var(--white);
+}
+
+.header .header-buttons {
+    gap: 20px;
+}
+
+/* set password page css */
+
+.authenticatiopn-btn {
+    padding: 15px 16px;
+}
+
+.profile-title-wrap .form-title {
+    margin-bottom: 1rem;
+}
+
+.complete-profile-form .checkbox-content-wrap,
+.find-job-form .checkbox-content-wrap {
+    margin-bottom: 7rem;
+}
+
+.find-job-form-text-wrap {
+    margin-bottom: 5rem;
+}
+
+.find-job-form-text-wrap svg {
+    flex-shrink: 0;
+}
+
+.link.underlined {
+    text-decoration: underline;
+    color: var(--darkgreen);
+}
+
+.link.underlined:hover {
+    text-decoration: none;
+}
+
+
+/* sresponsivde media query */
+
+@media(max-width: 1365px) {
+    .authentication-wrap {
+        max-width: 50rem;
+    }
+}
+
+@media(max-width: 991px) {
+    :root {
+        --header-height: 80px;
+    }
+
+    .auth-wrap {
+        height: calc(100vh - var(--header-height));
+    }
+}
+
+@media(max-width: 575px) {
+
+    .set-password-wrap .header-inner,
+    .complete-profile-form-wrap .header-inner {
+        justify-content: center;
+    }
+
+    .authentication-wrap {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .set-password-form .btn {
+        margin-top: 100px;
+    }
+
+    .find-job-wrap .btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    }
+}

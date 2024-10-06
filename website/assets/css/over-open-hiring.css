@@ -1,0 +1,362 @@
+/* .over-hiring {
+  color: var(--black);
+} */
+
+.text-grey {
+  color: #cbcbcb;
+}
+
+.over-hero-content-wrap {
+  max-width: 51rem;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+
+.over-hero-tagline {
+  font-size: 18px;
+  margin-bottom: 0;
+  color: #2a2f29;
+  line-height: 1.6;
+}
+
+/* .over-hero-tagline {
+  max-width: 40rem;
+  color: var(--black);
+} */
+
+.over-hero-right-wrap {
+  position: relative;
+  background-color: #efefef;
+  border-radius: 6px;
+  margin-left: 14rem;
+  padding-bottom: 93%;
+}
+
+.over-hero-right-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.over-round-circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  margin: 0 auto;
+}
+
+.over-principle-title {
+  margin-bottom: 25px;
+}
+
+.over-principle-text {
+  color: var(--black);
+  max-width: 31rem;
+  margin: 0 auto;
+}
+
+.over-how-wrok {
+  background-color: #212121;
+}
+
+.over-how-work-title {
+  max-width: 44rem;
+}
+
+.over-how-work-text {
+  max-width: 40rem;
+}
+
+.over-how-work-ul {
+  margin-left: 15px;
+}
+
+.over-hiring-faq-text {
+  color: var(--black);
+  max-width: 60rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.over-faq-wrap {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.over-faq-wrap .accordion-item {
+  background-color: transparent;
+  border-color: #747474;
+}
+
+.accordion-flush .accordion-item:last-child {
+  border-bottom: 1px solid #747474;
+}
+
+.over-faq-wrap .accordion-button {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+  background-color: transparent;
+  padding: 16px 0;
+}
+
+.over-faq-wrap .accordion-button:not(.collapsed) {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.over-faq-wrap .accordion-button:focus {
+  color: var(--black);
+  border-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.over-faq-wrap .accordion-body {
+  background-color: var(--white);
+  margin-bottom: 30px;
+}
+
+.over-faq-wrap .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none'%3E%3Cpath stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='1.5' d='M19.92 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.08 8.95'%3E%3C/path%3E%3C/svg%3E");
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.over-blog-card {
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.over-logo {
+  display: inline-block;
+  padding: 8px;
+  background-color: #302f2f;
+  color: var(--white);
+  line-height: 1;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.over-profile {
+  width: 60px;
+  height: 60px;
+  background-color: #d5d5d5;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.over-profile img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+
+.over-about-us-title {
+  max-width: 47rem;
+}
+
+.aboutus-content-wrap p {
+  color: var(--darkgreen);
+  font-weight: 300;
+}
+
+
+.employee-hiring-section>div {
+  width: 50%;
+}
+
+.employee-hiring-text-wrap {
+  margin: 4.8rem 0 6rem 0;
+}
+
+.employee-hiring-text-wrap>div {
+  margin-bottom: 18px;
+}
+
+.employee-img-wrap {
+  position: absolute;
+  /* padding-bottom: 39.5%; */
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+}
+
+.employee-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.employee-content-wrap-width {
+  max-width: 408px;
+  width: 100%;
+}
+
+.employee-wrap {
+  position: relative;
+  background-color: var(--lightgreen);
+  color: var(--darkgreen);
+}
+
+.profile-logo-img {
+  position: relative;
+  width: 76px;
+  height: 100%;
+  padding-bottom: 10%;
+  margin-right: 3.2rem;
+}
+
+.profile-logo-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  top: 0;
+  left: 0;
+}
+
+.employee-job-profile-title h2 {
+  max-width: 50%;
+}
+.accordion-wrapper {
+  margin-bottom: 0;
+}
+
+/* RESPONSIVE START */
+@media (max-width: 1429px) {
+
+  .over-hero-tagline,
+  .over-how-work-text {
+    max-width: 65rem;
+  }
+
+  .over-faq-wrap,
+  .over-hiring-faq-text {
+    max-width: 74rem;
+  }
+
+  .over-principle-title {
+    margin-bottom: 15px;
+  }
+
+  .over-faq-wrap .accordion-button {
+    font-size: 18px;
+    padding: 14px 0;
+  }
+
+  .over-faq-wrap .accordion-button::after {
+    width: 18px;
+    height: 18px;
+  }
+
+  .over-blog-card {
+    padding: 18px;
+  }
+
+  .over-profile {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 1365px) {
+  .over-faq-wrap .accordion-button {
+    font-size: 16px;
+  }
+
+  .over-faq-wrap .accordion-button::after {
+    width: 16px;
+    height: 16px;
+  }
+
+  .over-faq-wrap .accordion-body {
+    margin-bottom: 20px;
+  }
+
+  .over-hero-title,
+  .over-hero-tagline {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .over-hero-tagline,
+  .over-how-work-text,
+  .over-principle-text {
+    max-width: unset;
+  }
+
+  .over-faq-wrap,
+  .over-hiring-faq-text {
+    max-width: 104rem;
+  }
+
+  .employee-img-wrap {
+    position: relative;
+    top: unset;
+    left: unset;
+    height: 100%;
+    width: 100%;
+  }
+
+  .employee-wrap {
+    padding: 0 !important;
+  }
+
+  .employee-content-wrap-width {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .employee-hiring-section>div {
+    width: 100%;
+    padding: 5rem 0 5rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .over-how-work-title,
+  .over-about-us-title {
+    max-width: unset;
+  }
+
+  .over-hero-title,
+  .over-hero-tagline,
+  .over-how-work-title,
+  .over-about-us-title {
+    text-align: center;
+  }
+
+  .over-hero-right-wrap {
+    margin-left: unset;
+  }
+
+  .over-logo {
+    font-size: 14px;
+  }
+
+  .over-hero-content-wrap {
+    max-width: 100%;
+  }
+
+  .employee-job-profile-title h2 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {}
+
+/* RESPONSIVE END */

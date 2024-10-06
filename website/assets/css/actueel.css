@@ -1,0 +1,142 @@
+.trends-grid .custon-card {
+  margin: 0;
+}
+
+.actueel-title {
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto 4rem;
+}
+
+.trends-tabs .nav {
+  margin-bottom: 4rem;
+}
+
+.trends-tabs .nav-item {
+  margin-right: 12px;
+  margin-top: 12px;
+}
+
+.trends-tabs .nav-link {
+  font-size: 14px;
+  border-radius: 50px;
+  border: 1px solid var(--darkgreen);
+  text-align: center;
+  color: var(--darkgreen);
+  padding: 8px 20px;
+}
+
+.trends-tabs .nav-link::after {
+  display: none;
+}
+
+.trends-tabs .nav-link:hover {
+  text-decoration: none;
+}
+
+.trends-tabs .nav-link.active {
+  background-color: var(--darkgreen);
+}
+
+.trends-grid > *:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.trend-card-wrap {
+  text-decoration: none;
+}
+
+.trend-card {
+  padding: 40px 32px;
+  border-radius: 10px;
+  min-height: 400px;
+  height: 100%;
+}
+
+.trend-card .trend-card-info {
+  position: relative;
+  display: flex;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.trend-card-info > div {
+  white-space: nowrap;
+}
+
+.trend-card-info div:not(:last-child) {
+  position: relative;
+  margin-right: 15px;
+}
+
+.trend-card-info div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: currentColor;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.trend-card .trend-title {
+  font-weight: 900;
+}
+
+.trend-card.bg-darkgreen-tint-3 {
+  color: #fafbf9;
+}
+
+.trend-card.bg-lightgreen-shade-1 {
+  color: var(--darkgreen);
+}
+
+.trend-card.bg-lightgreen-shade-1 .trend-card-info {
+  color: var(--rose);
+}
+
+.trend-card.bg-rose {
+  color: #fafbf9;
+}
+
+.trend-card.bg-rose .trend-card-info {
+  color: var(--lightgreen-tint-3);
+}
+
+@media (max-width: 991px) {
+  .actueel-title {
+    max-width: 100%;
+  }
+
+  .trend-card {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .actueel-title h1 {
+    font-size: 28px;
+  }
+
+  .trend-card {
+    min-height: auto;
+    padding: 25px;
+  }
+
+  .trend-card-info {
+    font-size: 14px;
+  }
+
+  .trend-card .trend-title {
+    font-size: 20px;
+  }
+
+  .trends-tabs .nav-item {
+    margin-top: 8px;
+    margin-right: 8px;
+  }
+}

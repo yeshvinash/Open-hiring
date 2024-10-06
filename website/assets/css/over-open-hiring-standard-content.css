@@ -1,0 +1,363 @@
+.opne-hiring-caption {
+  max-width: 615px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.open-hiring {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.open-hiring-title {
+  margin-bottom: 40px;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--text-color);
+  background-color: transparent;
+}
+.accordion-item {
+  color: var(--text-color);
+  background-color: var(--white);
+  border: solid 1px #efefef;
+}
+.accordion-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.accordion-button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 38px 32px 38px;
+  color: var(--darkgreen);
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  overflow-anchor: none;
+  -webkit-transition: var(--bs-accordion-transition);
+  -o-transition: var(--bs-accordion-transition);
+  font-size: 24px;
+  transition: var(--bs-accordion-transition);
+  font-weight: 700;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--darkgreen);
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.open-hiring-caption-wrapper {
+  max-width: 636px;
+  margin: auto;
+}
+.open-hiring-caption {
+  color: rgba(45, 51, 41, 0.8);
+}
+.accordion-button:not(.collapsed):after {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  margin-left: auto;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 11v2h10v-2H7z' fill='rgba(146,170,131,1)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+.accordion-button:after {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  margin-left: auto;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M11 11V7h2v4h4v2h-4v4h-2v-4H7v-2h4zm1 11C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z' fill='rgba(214,214,214,1)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.accordion-body {
+  padding: 0 17px 40px 17px;
+  font-weight: 500;
+}
+.accordion-wrapper {
+  max-width: 685px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.check-description {
+  max-width: 478px;
+}
+.play-icon {
+  cursor: pointer;
+}
+.check-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.waarom-description {
+  margin-bottom: 60px;
+}
+.open-hiring-content-container {
+  max-width: 615px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bediening-white-box img {
+  border-radius: 10px;
+}
+.bediening-white-box {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.idea-description {
+  max-width: 736px;
+  margin: auto;
+  line-height: 1.56;
+}
+.idea-wrapper {
+  padding: 60px;
+  background-color: #e2ecc9;
+  border-radius: 10px;
+}
+
+/* Responsive start */
+@media only screen and (max-width: 1799px) {
+}
+@media only screen and (max-width: 1599px) {
+  .open-hiring {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .accordion-button {
+    padding: 18px 32px 18px;
+  }
+  .accordion-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .check-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .waarom-description {
+    margin-bottom: 30px;
+  }
+  .bediening-white-box {
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+  .open-hiring-title {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1365px) {
+}
+
+@media only screen and (max-width: 1279px) {
+}
+
+@media only screen and (max-width: 1199px) {
+  .bediening-white-box {
+    margin-bottom: 50px;
+  }
+  .accordion-button {
+    padding: 18px 30px 18px;
+  }
+  .accordion-body {
+    padding: 0 15px 20px 15px;
+  }
+  .waarom-description {
+    margin-bottom: 20px;
+  }
+  .accordion-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  /* Font-size start */
+  .h1,
+  h1 {
+    font-size: 5.5rem;
+  }
+  /* Font-size end */
+}
+@media only screen and (max-width: 991px) {
+  /* font-size start */
+  .h1,
+  h1 {
+    font-size: 4.5rem;
+  }
+  /* font-size end */
+  .accordion-wrapper {
+    max-width: 685px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .accordion-body {
+    padding: 0 5px 10px 5px;
+  }
+  .accordion-button {
+    padding: 18px 20px 18px;
+  }
+  .idea-wrapper {
+    padding: 40px;
+  }
+  .bediening-white-box {
+    margin-bottom: 40px;
+  }
+  .bediening-white-box {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Font-size start */
+  .h1,
+  h1 {
+    font-size: 3.5rem;
+  }
+  /* Font-size end */
+
+  /* open hiring content start */
+  .open-hiring-content-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .check-item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  /* open hiring content end */
+}
+
+@media only screen and (max-width: 575px) {
+  /* Font-size start */
+  .h1,
+  h1 {
+    font-size: 3rem;
+  }
+
+  /* Font-size end */
+
+  /* Accordion start */
+  .accordion-wrapper {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .open-hiring-title {
+    margin-bottom: 10px;
+  }
+  /* Accordion end */
+}
+
+@media only screen and (max-width: 480px) {
+  /* Font-size start */
+  .h1,
+  h1 {
+    font-size: 2.5rem;
+  }
+  .p,
+  p {
+    font-size: 15px;
+  }
+  .h6,
+  h6 {
+    font-size: 16px;
+  }
+  /* Font-size end */
+
+  .open-hiring-title {
+    margin-bottom: 20px;
+  }
+  .accordion-wrapper {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .accordion-body {
+    padding: 0 0px 8px 0px;
+  }
+  .accordion-button {
+    padding: 15px 15px 15px;
+  }
+  .bediening-white-box {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .idea-wrapper {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  /* Font-size start */
+  .h1,
+  h1 {
+    font-size: 2rem;
+  }
+  .p,
+  p {
+    font-size: 14px;
+  }
+  .h6,
+  h6 {
+    font-size: 15px;
+  }
+  /* Font-size end */
+  .open-hiring-title {
+    margin-bottom: 15px;
+  }
+  .accordion-wrapper {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .accordion-button::after {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+  }
+  .accordion-button:not(.collapsed):after {
+    width: 20px;
+    height: 20px;
+  }
+  .open-hiring {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .accordion-body {
+    padding: 0px;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .accordion-wrapper {
+    margin-bottom: 20px;
+  }
+}
+/* Responsive end */

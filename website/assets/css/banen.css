@@ -1,0 +1,326 @@
+.banen {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.banen-title-wrapper {
+  max-width: 636px;
+  margin-bottom: 40px;
+}
+.filter-input-field {
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px solid var(--gray);
+  background-color: var(--white);
+  -webkit-appearance: none;
+  padding: 15px 24px;
+  border-radius: 28px;
+  appearance: none;
+}
+.select-input:last-child {
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.filter-input-field::placeholder {
+  color: rgba(46, 52, 42, 0.5);
+}
+.filter-input-field:focus-visible {
+  outline: none;
+}
+.functie-select-wrapper {
+  margin-bottom: 24px;
+  margin-top: 20px;
+}
+.filter-select {
+  color: rgba(46, 52, 42, 0.5);
+  appearance: none;
+  -webkit-appearance: none;
+}
+.select-wrapper {
+  position: relative;
+}
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 6%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z' fill='rgba(46,52,42,0.5)'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  top: 27%;
+}
+.badge-horeca {
+  background-color: #91a982;
+}
+.filter-wrapper {
+  position: sticky;
+  top: 20px;
+}
+.card-caption {
+  color: rgba(46, 52, 42, 0.8);
+}
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--darkgreen);
+}
+.card-description {
+  color: rgba(46, 52, 42, 0.8);
+}
+.card-description-wrapper {
+  max-width: 501px;
+}
+.badge-wrapper {
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+.badge {
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.part-time {
+  background-color: #e2ecc9;
+}
+.card-footer-container {
+  color: var(--gray);
+  font-weight: 500;
+}
+.card-footer {
+  color: rgba(17, 24, 39, 0.5);
+}
+.card-wrapper {
+  border: solid 1px #c9c9c9;
+  border-radius: 8px;
+  background-color: var(--white);
+}
+.card-container {
+  padding: 20px 20px 24px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.logo-container {
+  max-width: 142px;
+  max-height: 80px;
+  border-radius: 8px;
+}
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.form-control {
+  -webkit-appearance: 0;
+  -moz-appearance: 0;
+  appearance: 0;
+}
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--white);
+  border-color: var(--gray);
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.card-footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.card-footer-container span {
+  line-height: 1;
+  position: relative;
+}
+.card-footer-container span:not(:first-child) {
+  margin-left: 5px;
+  padding-left: 5px;
+}
+.card-footer-container span:not(:first-child)::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50px;
+  top: 50%;
+  left: -6px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: rgba(17, 24, 39, 0.5);
+}
+
+/* Responsive start */
+@media only screen and (max-width: 1799px) {
+}
+@media only screen and (max-width: 1599px) {
+}
+@media only screen and (max-width: 1439px) {
+  .banen {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 1365px) {
+}
+
+@media only screen and (max-width: 1279px) {
+  .card-footer-container span:not(:first-child)::before {
+    left: -6px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+}
+
+@media only screen and (max-width: 1023px) {
+  .banen {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .filter-wrapper {
+    margin-bottom: 30px;
+    position: static;
+    top: 0;
+  }
+  .banen-title-wrapper {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .select-wrapper::after {
+    right: 3%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Font-size start */
+  /* Font-size end */
+  .banen-title-wrapper {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .filter-wrapper {
+    margin-bottom: 30px;
+    position: static;
+  }
+  .badge-wrapper {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .banen-title-wrapper {
+    margin-bottom: 20px;
+  }
+  .card-title {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* Font size start */
+  .h1,
+  h1 {
+    font-size: 4rem;
+  }
+  .p,
+  p {
+    font-size: 14px;
+  }
+  .h5,
+  h5 {
+    font-size: 18px;
+  }
+  /* Font size end */
+  .banen {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .banen-title-wrapper {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .select-input:last-child {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .filter-wrapper {
+    margin-bottom: 20px;
+  }
+  .card-title {
+    font-size: 19px;
+  }
+  .banen {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /* .card-footer::after {
+    position: absolute;
+    content: ".";
+    top: -14px;
+    font-size: 25px;
+    right: 91px;
+  } */
+}
+
+@media only screen and (max-width: 480px) {
+  /* Font size start */
+  .h5,
+  h5 {
+    font-size: 16px;
+  }
+  .p,
+  p {
+    font-size: 12px;
+  }
+  .h1,
+  h1 {
+    font-size: 3.5rem;
+  }
+  /* Font size end */
+
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .logo-wrapper {
+    margin-bottom: 10px;
+  }
+  .logo-container {
+    width: 142px;
+    height: 80px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .card-container {
+    padding: 15px 15px 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  /* Font-size start */
+  .h5,
+  h5 {
+    font-size: 15px;
+  }
+  /* Font-size end */
+}
+/* Responsive end */
