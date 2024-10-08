@@ -31,7 +31,7 @@ To run the project locally, follow these steps:
 1. Clone the repository:
    
    ```bash
-     https://github.com/yeshvinash/Open-hiring.git
+     git clone https://github.com/yeshvinash/Open-hiring.git
      cd Open-hiring
    ```
 
